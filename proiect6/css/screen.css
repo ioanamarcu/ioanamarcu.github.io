@@ -1,0 +1,490 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+body{
+	margin: 0;	
+}
+
+.main-wrapper{
+	background-color: #303030;
+	font-family: "Open sans", sans-serif;
+	overflow: hidden;
+}
+
+.app-wrapper{
+	width: 1280px;	
+	min-height: 900px;
+	margin: 10px auto;
+	border: 1px solid black;
+}
+
+.app-header{
+	height: 65px;
+	background-color: #01c770;
+	overflow: hidden;
+	position: relative;
+}
+
+.app-header h3{
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 40px;
+	transform: translate(0, -50%);
+	font-size: 14px;
+	color: #fff;
+	font-weight: 400;
+ }
+
+.menu-bars{
+	position: absolute;
+	right: 45px;	
+	top: 50%;
+	transform: translate(0, -50%);
+	cursor: pointer;
+}
+
+.menu-bars span{
+	width: 30px;
+	height: 2px;
+	display: block;
+	background-color: #fff;
+	margin-bottom: 6px;
+}
+
+.menu-bars span:last-child{
+	margin-bottom: 0;
+}
+
+#delimitation-bar{
+	height: 65px;
+	position: absolute;
+	right: 125px;
+	width: 1px;
+	background-color: #01a95e;
+}
+
+.app-content{
+	overflow: hidden;
+	height: 835px;
+}
+
+.app-content > div{
+	float: left;
+	box-sizing: border-box;
+}
+
+.app-content .dashboard{
+	overflow: hidden;
+	background-color: #454545;
+	width: 352px;			
+	height: 100%;
+}
+
+.app-content .dashboard .dashboard-header{
+	overflow: hidden;
+	border-bottom: 1px solid #373737;
+	padding: 24px;
+}
+
+.app-content .dashboard .dashboard-header .search-container{
+	overflow: hidden;
+	border-radius: 2px;
+	background-color: #585858;
+}
+
+.app-content .dashboard .dashboard-header .search-container > div{
+	float: left;
+}
+
+.app-content .dashboard .dashboard-header .search-container > .search-icon{
+	width: 13%;		
+	border-right: 1px solid #454545;
+	cursor: pointer;
+	padding: 8px 10px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.app-content .dashboard .dashboard-header .search-container > .search-icon > i{
+	color: #fff;
+}
+
+.app-content .dashboard .dashboard-header .search-container > .search-field{
+	width: 87%;
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+.app-content .dashboard .dashboard-header .search-container input{
+	border: 0;
+	font-size: 14px;
+	color: #fff;
+	outline: none;
+	background-color: transparent;
+	width: 100%;
+}
+
+.app-content .dashboard .dashboard-header .search-container input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.app-content .dashboard .dashboard-content > div{
+	border-bottom: 1px solid #373737;
+	color: #fff;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.app-content .dashboard .dashboard-content .contact-message-area > div{
+	float: left;
+}
+
+.app-content .dashboard .dashboard-content .contact-message-area .chat-icon{
+	width: 20%;
+	text-align: center;
+}
+
+.app-content .dashboard .dashboard-content .contact-message-area .chat-icon i{
+	font-size: 25px;
+	padding-top: 40px;
+}
+
+.app-content .dashboard .dashboard-content .contact-message-area .contact-popup-message{
+	width: 80%;
+	font-size: 14px;
+	overflow: hidden;
+	font-weight: 600;
+	padding-right: 45px;
+	box-sizing: border-box;
+}
+
+.app-content .dashboard .dashboard-content .contact-message-area .contact-popup-message .contact-name{
+	overflow: hidden;
+	padding-top: 20px;
+}
+
+.app-content .dashboard .dashboard-content .contact-message-area .contact-popup-message .contact-name p{	
+	float: left;
+	margin: 0;
+}
+
+.app-content .dashboard .dashboard-content .contact-message-area .contact-popup-message .contact-name .message-hour{
+	float: right;
+	font-weight: normal;
+}
+
+.app-content .dashboard .dashboard-content .contact-message-area .contact-popup-message .message{
+	color: #999;
+}
+
+.app-content .dashboard .dashboard-content .contact-message-area .contact-popup-message .message p{
+	margin: 0;
+	padding: 10px 0 15px;
+}
+
+.app-content .dashboard .cta-buttons{
+	position: fixed;
+	top: 50px;
+	right: 12px;
+	padding: 20px;
+	background-color: #616969;
+}
+
+.app-content .dashboard .cta-buttons > button{
+	height: 30px;
+	width: 60px;
+	font-weight: bold;
+	color: #fff;
+	font-size: 16px;
+	background: #01c770;
+	text-align: center;
+	outline: none;
+	cursor: pointer;
+}
+
+.chat-container{
+	width: 928px;
+}
+
+.chat-container > div{
+	float: left;	
+	font-size: 14px;
+} 
+
+.chat-container .chat-message-area{
+	background-color: #fff;
+	color: #999;
+	width: 802px;
+	height: 835px;
+}
+
+.chat-container .chat-message-area .contact-info{
+	padding: 24px;
+	overflow: hidden;
+	box-sizing: border-box;
+	border-bottom: 1px solid #d2d2d2;
+}
+
+.chat-container .chat-message-area .contact-info > div{
+	float: left;
+}
+
+.chat-container .chat-message-area .contact-info .contact-photo{
+	margin-right: 24px;
+	width: 80px;
+	height: 80px;
+	overflow: hidden;
+	border-radius: 3px;
+}
+
+.chat-container .chat-message-area .contact-info div:nth-child(2){
+	width: 650px;
+}
+
+.chat-container .chat-message-area .contact-info .contact-photo img{
+	border-radius: 3px;
+	display: block;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.chat-container .chat-message-area .contact-info .main-info{
+	overflow: hidden;
+	position: relative;
+}
+
+.chat-container .chat-message-area .contact-info .main-info h5{
+	margin: 0;
+	color: #01c770;
+	font-size: 16px;
+	font-weight: 600;
+	padding-bottom: 5px;
+}
+
+.chat-container .chat-message-area .contact-info .main-info p{
+	margin: 0;
+	padding-bottom: 27px;
+}
+
+.chat-container .chat-message-area .contact-info .main-info i{
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 26px;
+}
+
+.chat-container .chat-message-area .contact-info .extra-info{
+	overflow: hidden;
+}
+
+.chat-container .chat-message-area .contact-info .extra-info > div{
+	float: left;
+}
+
+.chat-container .chat-message-area .contact-info .extra-info > div > span{
+	padding-left: 25px;
+	position: relative;
+}
+
+.chat-container .chat-message-area .contact-info .extra-info > div > span:before{
+	content: "";
+	display: block;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-radius: 50%;
+	border: 3px solid #01c770;
+}
+
+.chat-container .chat-message-area .contact-info .extra-info > ul a{
+	padding-left: 10px;
+	text-decoration: none;
+}
+
+.chat-container .chat-message-area .contact-info .extra-info ul{
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+
+.chat-container .chat-message-area .contact-info .extra-info ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding-left: 30px;
+}
+		
+.chat-container .chat-message-area .contact-info .extra-info ul li i{
+	font-size: 20px;
+}
+
+.message-list{
+	padding: 0;
+	margin: 0;
+	overflow: auto;
+	box-sizing: border-box;
+	height: 612px;
+} 
+
+.message-list > li{ 
+	list-style-type: none;
+	border-bottom: 1px solid #d2d2d2;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding: 24px;
+}
+
+.message-list > li:hover{
+	cursor: pointer;
+}
+
+.message-list > li:hover > div:last-child > i{
+	display: block;
+}
+
+.message-list > li > div{
+	float: left; 
+	overflow: hidden;
+}
+
+.message-list > li > div:first-child{
+	width: 64px;
+	height: 64px;
+	border-radius: 3px;
+	margin-right: 24px;
+}
+
+.message-list > li > div:first-child img{
+	display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.message-list > li > div:last-child{
+	width: 649px;
+	position: relative;
+}
+
+.message-list > li > div:last-child h4{
+	margin: 0;
+	color: #585858;
+	padding-bottom: 10px;
+}
+
+.message-list > li > div:last-child span{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.message-list > li > div:last-child p{
+	margin: 0;
+	line-height: 16px;
+}
+
+.message-list > li > div:last-child > i{
+	font-size: 20px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	display: none;
+} 
+
+.adding-text-message{
+	overflow: hidden;
+	box-sizing: border-box;
+	padding: 20px;
+	background-color: #f8f8f8;
+}
+
+.adding-text-message .message-field{
+	overflow: hidden;
+	background-color: #fff;
+	border: 1px solid #d2d2d2;
+	border-radius: 2px;
+}
+
+.adding-text-message .message-field > div,
+.adding-text-message .message-field > button{
+	border: 0;
+	background: transparent;
+	float: left;
+ 	box-sizing: border-box;
+ 	overflow: hidden;
+ 	color: inherit;
+}
+
+.adding-text-message .message-field > div:first-child{
+ 	width: 720px;
+ 	border-right: 1px solid #d2d2d2;
+ 	padding: 10px 20px;
+ 	font-size: 13px;
+}
+
+.adding-text-message .message-field input{
+	border: 0;
+    color: #999;
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+    height: 16px;
+    padding: 0;
+ }
+
+.adding-text-message .message-field input::-webkit-input-placeholder {
+	color: #999;
+}
+
+.adding-text-message .message-field > button{
+	width: 40px;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+}
+
+.adding-text-message .message-field > button span{
+	line-height: 36px;
+	font-size: 30px;
+	display: inline-block;
+}
+
+.chat-settings{
+	width: 126px;
+	height: 835px;
+	background-color: #454545;
+
+}
+
+.chat-settings > div{
+	cursor: pointer;
+	padding: 45px;
+	border-bottom: 1px solid #373737;
+	overflow: hidden;
+	box-sizing: border-box;
+	text-align: center;
+	color: #fff;
+}
+
+.chat-settings > div > div{
+	border: 2px solid #fff;
+	border-radius: 100%;
+	width: 30px;
+	height: 30px;
+	font-size: 30px;
+	line-height: 30px;	
+}
+
+.chat-settings > div > i{
+	font-size: 30px;
+}
+
+.hide{
+	display: none;
+}

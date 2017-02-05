@@ -1,0 +1,335 @@
+body{
+	margin: 0;
+}
+
+.container{
+	width: 1140px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+#section-1{
+	background: url(../img/hero-image.jpg) no-repeat center top;
+	min-height: 880px;
+}
+
+#section-1 header ul{
+	float: right;
+}
+
+#section-1 header ul li{
+	display: inline-block;
+	padding: 30px 15px;
+	
+}
+
+#section-1 header ul li a{
+	color: #FFFFFF;
+	text-decoration: none;
+	font-family: "Lato", sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;	
+}	
+
+#section-1 .container > div{
+	text-align: center;
+	color: #FFF;
+	padding-top: 230px;
+}
+
+#section-1 .container > div h2{
+	font-family: "Times New Roman", serif;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 36px;
+	opacity: 0.7;
+	margin: 0;
+}
+
+#section-1 .container > div h1{
+	font-family: "Lato", sans-serif;
+	font-weight: bold;
+	font-size: 100px;
+	text-transform: uppercase;	
+	margin: 0;
+	line-height: 100px;
+}
+
+#section-1 .container > div .button{
+	display: inline-block;
+	padding: 20px 80px;
+	border: 3px solid #fff;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: "Lato", sans-serif;
+	font-weight: bold;
+	border-radius: 4px;
+	margin-top: 42px;
+	margin-bottom: 35px;
+	transition: background 0.2s linear;
+}
+
+#section-1 .container > div .button:hover{
+	color: #840C4A;
+	background-color: #fff;
+	box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+}
+
+#section-1 .container > div p{
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: "Lato", sans-serif;
+}
+
+#section-1 .container > div p a{
+	font-weight: bold;
+	color: #fff;
+}
+
+#section-2 .container > div{
+	display: inline-block;
+	width: 33%;
+	text-align: center;
+	padding: 50px 25px;
+	box-sizing: border-box;
+}
+
+#section-2 .container > div h3{
+	text-transform: uppercase;
+	font-size: 18px;
+	font-family: "Lato", sans-serif;
+	font-weight: bold;
+	position: relative;
+}
+
+#section-2 .container > div h3:after{          
+	display: block;
+	position: absolute;
+	height: 1px;
+	width: 86px;
+	background: #f57365;
+	bottom: -7px;
+	left: 50%;
+	margin-left: -43px;
+	content: '';
+}
+
+#section-2 .container > div p{
+	font-size: 16px;
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+	line-height: 25px;
+}
+
+#section-3{
+	background: #f7f7f7;
+}
+
+#section-3 .container{
+	overflow: hidden;	
+}
+
+#section-3 .container > div{
+	float: left;
+	width: 50%;
+	box-sizing: border-box;
+	padding: 50px 0 0;
+}
+
+#section-3 .container > div:first-child img{
+	display: block;
+}
+
+#section-3 .container > div:last-child{
+	padding: 90px 40px;
+}
+
+#section-3 .container > div h3{
+	text-transform: uppercase;
+	font-size: 18px;
+	font-family: "Lato", sans-serif;
+	font-weight: bold;
+	position: relative;
+}
+
+#section-3 .container > div h3:after{   
+	display: block;
+	position: absolute;
+	height: 1px;
+	width: 86px;
+	background: #f57365;
+	bottom: -7px;
+	content: '';
+}
+
+
+#section-3 .container > div p{
+	font-size: 16px;
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+	line-height: 25px;
+}
+
+#section-3 .container > div:last-child img{
+	margin-right: 20px;
+}
+
+#section-4{
+	background-image: url(../img/testimonial-backgroud.png);
+	background-color: #4a3949;
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding: 75px 0;
+}
+
+#section-4 .container > div{
+	text-align: center;
+}
+
+#section-4 .container > div p{
+	font-family: "Lato Hairline Light", sans-serif;
+	font-weight: 100;
+	font-size: 30px;
+	color: #fff;
+	opacity: 0.4;
+	line-height: 50px;
+	margin-top: 15px;
+	margin-bottom: 0;
+}
+
+#section-4 .container > div .testimonial-name{
+	font-style: italic;
+	font-size: 18px;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+#section-5 .container > h2{
+	position: relative;
+	text-transform: uppercase;
+	margin-top: 72px;
+	margin-bottom: 40px;
+	font-family: "Lato", sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+
+}
+
+#section-5 .container > h2:after{
+	display: block;
+	position: absolute;
+	height: 1px;
+	width: 86px;
+	background: #f57365;
+	bottom: -7px;
+	left: 50%;
+	margin-left: -43px;
+	content: '';
+}
+
+#section-6{
+	overflow: hidden;
+}
+#section-6 > div > div{
+	position: relative;
+	float: left;
+	text-align: center;
+	color: #fff;
+	width: 25%;
+}
+
+#section-6 > div > div > div{
+	position: absolute;
+	top: 75px;
+	left: 0;
+	width: 100%;
+}
+
+#section-6 > div > div > img{
+	display: block;
+	width: 100%;
+}
+
+
+#section-6 > div > div > div > span:first-child{
+	font-family: "Times New Roman", sans-serif;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 16px;
+	display: block;   
+}
+
+#section-6 > div > div > div > span:last-child{
+	font-family: "Lato", sans-serif;
+	font-weight: bold;
+	font-size: 36px;
+	text-transform: uppercase;
+}
+
+#section-7{
+	overflow: hidden;
+}
+
+#section-7 .container > div{
+	float: left;
+	width: 20%;
+	text-align: center;
+	padding: 50px 25px;
+	box-sizing: border-box;
+}
+
+#section-7 .container > div:first-child{
+	padding-left: 0;
+}
+
+#section-7 .container > div:last-child{
+	padding-right: 0;
+}
+
+#section-7 .container > div > span:first-child{
+	font-family: "Lato", sans-serif;
+	font-weight: bold;
+	font-size: 36px;
+	display: block;
+}
+
+#section-7 .container > div > span:last-child{
+	font-family: "Lato", sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 25px;
+}
+
+footer{
+	background: #f7f7f7;
+	overflow: hidden;
+	border-top: 1px solid #e2e2e2;
+}
+
+footer .container > div{
+	float: left;
+	width: 50%;
+	padding: 40px 0;
+	box-sizing: border-box;
+	color: #8b8b8b;
+	font-family: "Lato", sans-serif;
+	font-size: 14px; 
+}
+
+footer .container > div:first-child{	
+	opacity: 0.5;
+}
+
+footer .container > div:last-child{
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	text-align: right;
+}
+
+footer .container > div:last-child > span > strong{
+	color: #000;
+}

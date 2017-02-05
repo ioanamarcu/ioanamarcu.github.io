@@ -1,0 +1,355 @@
+body{
+	margin: 0;
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+}
+
+.container{
+	width: 940px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+#section-1{
+	background: url(../img/hero-image.png) no-repeat center top;  
+	color: #fff;
+}
+
+#section-1 header{
+	padding-top: 70px;
+}
+
+#section-1 header ul{
+	float: right;
+}
+
+#section-1 header ul li{
+	display: inline-block;
+	padding: 13px 10px;
+}
+
+#section-1 header ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+	position: relative;
+}
+
+#section-1 header > ul > .active{
+	border-bottom: 3px solid #1abc9c;
+}
+		
+#section-1 .container{
+	overflow: hidden;	
+}
+
+#section-1 .container > div{
+	float: left;
+	width: 50%;
+	padding-top: 200px;
+	box-sizing: border-box;
+}
+
+#section-1 .container > div > h1{
+	font-size: 30px;
+	font-weight: normal;
+	padding-bottom: 50px;
+}
+
+#section-1 .container > div > p{
+	font-size: 18px;
+	font-weight: 300;
+	margin-bottom: 0;
+}
+
+#section-1 .container > .cta-buttons{
+	padding-top: 60px; 
+}
+
+#section-1 .container > .cta-buttons > a{
+	display: inline-block;
+	width: 30%;
+	text-align: center;
+	border-radius: 5px;
+	background: #1abc9c;
+	font-size: 18px;
+	font-weight: 300;
+	text-decoration: none;
+	color: #fff;
+	padding: 15px 22px;
+}
+
+#section-1 .container > .cta-buttons > .right{
+	background: #3498db;
+}
+
+#section-1 .container > .cta-buttons > span{
+	display: inline-block;
+	text-align: center;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	background: #fff;
+	font-size: 18px;
+	color: #4f6173;
+	margin: 0 -10px;
+	position: relative;
+	z-index: 2;
+}
+
+#section-2 .container{
+	overflow: hidden;
+}
+
+#section-2 .container > div{
+	float: left;
+	position: relative;
+	padding: 110px 50px;
+	box-sizing: border-box;
+}
+
+#section-2 .container > div:first-child{
+	width: 70%;
+	padding-left: 0;
+}
+
+#section-2 .container > div:last-child{
+	width: 30%;
+}
+
+#section-2 .container > div > h2{
+	font-size: 24px;
+	font-weight: normal;
+	margin-top: 0;
+}
+
+#section-2 .container > div > p{
+	font-size: 18px;
+	color: #425569;
+}
+
+#section-3{
+	background: #f6f6f6;
+	overflow: hidden;
+}
+
+#section-3 .container > div{
+	float: left;
+	width: 33%;
+	text-align: center;
+	color: #2c3e50;
+	padding: 75px 25px;
+	box-sizing: border-box;
+}
+
+#section-3 .container > div > h3{
+	font-size: 20px;
+	color: #2c3e50;
+	font-weight: normal;
+	text-transform: capitalize;
+}
+
+#section-3 .container > div > p{
+	font-size: 14px;
+}
+
+#section-4{
+	background: url(../img/carousel.png) no-repeat center top;
+	overflow: hidden;
+	color: #fff;
+	text-align: center;
+}
+
+#section-4 .container{  
+	position: relative;
+}
+
+#section-4 .container > div > h2{
+	font-size: 30px;
+	font-weight: normal;
+	margin-top: 60px;
+	margin-bottom: 0;
+}
+
+#section-4 .container > div > p{
+	font-size: 18px;
+	font-weight: 200;
+	margin: 0 0 90px 0;
+}
+
+#section-4 .container > div:last-child > .arrow-left{
+	position: absolute;
+	padding-top: 55px;
+	padding-left: 0;
+}
+
+#section-4 .container > div:last-child > .arrow-right{
+	position: absolute;
+	padding-top: 55px;
+	padding-right: 0;
+}
+
+#section-5{
+	padding-bottom: 70px;
+}
+
+#section-5 div h2{
+	padding-bottom: 15px;
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 48px;
+	color: #34495e;
+	font-weight: 200;
+}
+
+#section-5 div h3{
+	font-size: 24px;
+	color: #34495e;
+	font-weight: normal;
+}
+
+#section-5 div p{
+	font-size: 14px;
+	color: #34495e;
+}
+
+#section-5 .container div{
+	overflow: hidden;
+}
+
+#section-5 > div > div > div{
+	float: left;
+	width: 50%;
+	padding: 15px 15px; 
+	box-sizing: border-box;
+}
+
+#section-5 > div > div > div > img{
+	float: left;
+	margin-right: 24px;
+}
+
+#section-6{
+	background: #34495e;
+	color: #fff;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+#section-6 .container{
+	overflow: hidden;
+}
+
+#section-6 > div > div,
+#section-6 > div > form{
+	float: left;
+	width: 50%;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+#section-6 div div h3{
+	font-size: 24px;
+	font-weight: normal;
+}
+
+#section-6 div div p{
+	font-size: 14px;
+	color: #bbc2c9;
+	font-weight: 300;
+	line-height: 20px;
+	margin-bottom: 40px;
+}
+
+#section-6 div div ul{
+	font-size: 14px;
+	font-weight: 100;
+	list-style-type: none;
+	padding-left: 0;
+}
+
+#section-6 div div ul li{
+	margin-bottom: 10px;
+}
+
+#section-6 div div ul li span img{
+	margin-right: 10px;
+}
+
+#section-6 .container form{
+	padding-top: 40px;
+	overflow: hidden;
+}
+
+#section-6 .container form div{
+	width: 100%;
+	margin-bottom: 16px;
+}
+
+#section-6 .container form div div{
+	float: left;
+	width: 206px;
+}
+
+#section-6 .container form div div:first-child{
+	margin-right: 8px;
+}
+
+#section-6 .container form div div:last-child{
+	margin-left: 8px;
+}
+
+#section-6 .container form div input,
+#section-6 .container form div textarea{
+	background: #5d6d7e;
+	width: 100%;
+	border: 0; 
+	border-radius: 5px;
+}
+
+#section-6 .container form div input{
+	height: 40px;
+	text-indent: 15px;
+}
+
+#section-6 .container form div textarea{   
+	height: 150px;
+	padding: 15px 300px 0px 12px;
+	font-family: "Open Sans", sans-serif;
+	color: #a4adb7;
+}
+
+#section-6 .container form div:last-child{
+	text-align: right;
+}
+
+#section-6 .container form div:last-child .left,
+#section-6 .container form div:last-child .right{
+	display: inline-block;
+	border-radius: 5px;
+	background: #1abc9c;
+	font-family: "Open Sans", sans-serif;
+	font-size: 18px;
+	color: #fff;
+	padding: 15px 55px;
+	border: 0;
+	width: fixed;
+}
+
+#section-6 .container form div:last-child .right{
+	background: #3498db;
+	margin-left: 15px;
+}
+
+footer{
+	background: #2c3e50;
+	padding: 60px 0;
+}
+
+footer div{
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 300;
+}
+  

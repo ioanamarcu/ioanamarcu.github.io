@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chatty Messenger</title>
+	<link rel="stylesheet" type="text/css" href="css/screen.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700,700italic,600italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/font-awesome.min.css">	 
+	<meta charset="UTF-8"> 
+</head>
+<body ng-app="myApp" class="ng-cloak">
+	<div class="main-wrapper">
+		<div class="app-wrapper" ng-controller="MainController">
+			<div class="app-header">
+				<h3><b>Chatty</b> messenger</h3>
+				<div class="menu-bars" ng-click="toggleMenu()">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<span id="delimitation-bar"></span>
+			</div>
+			<div class="app-content">
+				<div class="dashboard">
+					<div class="dashboard-header">
+						<div class="search-container">
+							<div class="search-icon">
+								<i class="fa fa-search" aria-hidden="true"></i>
+							</div>
+							<div class="search-field">
+								<input type="text" placeholder="Search" ng-model="searchName">
+							</div>								
+						</div>
+					</div>
+					<div class="dashboard-content">
+						<div class="contact-message-area" ng-repeat="message in recentMessages | filter:{name:searchName} | orderBy: '-time'  " ng-click="setActiveUser(message.userId)" >
+							<div class="chat-icon">
+								<i class="fa fa-comments-o" aria-hidden="true"></i>
+							</div>
+							<div class="contact-popup-message">
+								<div class="contact-name">
+									<p>{{message.name}}</p>
+									<span class="message-hour">{{message.time | date: "HH:mm"}}</span>
+								</div>
+								<div class="message">
+									<p>{{message.message}}</p>
+								</div>
+							</div>
+						</div>
+					</div>	
+					<div class="cta-buttons">
+						<button class="start" ng-click="startSendingMessages()">Start</button>
+						<button class="stop" ng-click="stopSendingMessages()">Stop</button>
+					</div>
+				
+				</div>
+				<div class="chat-container">
+					<div class="chat-message-area">
+						<div class="contact-info">
+							<div class="contact-photo">
+								<img ng-src="img/{{selectedUser.img}}">
+							</div>
+							<div>
+								<div class="main-info">
+									<h5>{{selectedUser.name}}</h5>
+									<p>{{selectedUser.activity}}</p>
+									<i class="fa fa-angle-up" aria-hidden="true"></i>
+								</div>
+								<div class="extra-info">
+									<div>
+										<span>{{selectedUser.online}}</span>
+									</div>
+									<ul>
+										<li>
+											<i class="fa fa-phone" aria-hidden="true"></i>
+											<a ng-href="#{{selectedUser.phone}}">{{selectedUser.phone}}</a>
+										</li>
+										<li>
+											<i class="fa fa-envelope-o" aria-hidden="true"></i>
+											<a ng-href="#{{selectedUser.email}}">Send Message</a>
+										</li>
+										<li>
+											<i class="fa fa-cog" aria-hidden="true"></i>
+											<a href="#">User settings</a>
+										</li>
+									</ul>
+								</div>	
+							</div>
+						</div>
+						<ul class="message-list" scroll-bottom="messageList">
+							<li ng-repeat="message in messageList | filter:{userId: selectedUser.userId}">
+								<div>
+									<img src="img/hugh-jackman.png">
+								</div>
+								<div>
+									<h4>{{message.name}}</h4>
+									<span>{{message.timeStamp | date: "HH:mm"}}</span>
+									<p>{{message.textMessage}}</p>
+									<i class="fa fa-trash-o" aria-hidden="true" ng-click="removeMessage(message.messageId)"></i>
+								</div>
+							</li>
+						</ul>
+						<div class="adding-text-message">
+							<form class="message-field" ng-submit="addMessageText('userIdentificator')">
+								<div>
+									<input type="text" placeholder="Type your message..." ng-model="newMessage">
+								</div>
+								<button type="submit">
+									<span>+</span>
+								</button>
+							</form>
+						</div>
+					</div>
+					<div class="chat-settings" ng-class="{'hide' : isMenuShown}">
+						<div>
+							<div>+</div>
+						</div>
+						<div>
+							<i class="fa fa-commenting-o" aria-hidden="true"></i>
+						</div>
+						<div ng-click="removeAllMessages()">
+							<i class="fa fa-trash-o" aria-hidden="true"></i>
+						</div>
+						<div>
+							<i class="fa fa-cog" aria-hidden="true"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/angular.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controllers.js"></script>
+<script src="js/services.js"></script>
+</body>
+</html>
