@@ -15,7 +15,7 @@
 							'<p>'+toAdd+'</p>'+
 						'</div>'+
 						'<div class="task-time">'+
-							'<span class="current-hour">7:00 AM</span>'+       
+							'<span class="current-hour"></span>'+       
 						'</div>'+
 					'</div>';
 			if ($("input").val() !== '') {			
@@ -26,7 +26,7 @@
 			$("input").val('');
 
 			updateTasksCounter();		
-			$(".current-hour").html(calcul());
+			$(".task:last-child > .task-time > .current-hour").html(calcul());
 		};
 
 		$(".button").on("click", addItem);           

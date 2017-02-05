@@ -317,6 +317,7 @@ body{
 	padding: 15px 300px 0px 12px;
 	font-family: "Open Sans", sans-serif;
 	color: #a4adb7;
+	box-sizing: border-box;
 }
 
 #section-6 .container form div:last-child{
